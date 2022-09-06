@@ -68,6 +68,7 @@ if (NOT DEVICE_EXTENDER)
 set(COMMON_LIBS ${COMMON_LIBS} -lcimplog)
 else ()
 add_definitions(-DDEVICE_EXTENDER)
+add_definitions(-DRDK_LOGGER_ENABLE)
 endif()
 
 if (FEATURE_SUPPORT_AKER)
